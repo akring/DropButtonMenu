@@ -47,7 +47,7 @@ class DropButtonMenu: UIView,UITableViewDataSource,UITableViewDelegate {
     let indicatorColor:UIColor
     let textColor:UIColor        /**< 文字颜色 */
     let separatorColor:UIColor   /**< 分隔符颜色 */
-    let iconImage:UIImage? = nil        /**< 按钮图标图片 */
+    var iconImage:UIImage? = nil        /**< 按钮图标图片 */
     var clickBlock:ClickBlock? = nil    /**< 点击回调Block */
     var dataArray:NSArray = []          /**< 数据源 */
     
@@ -689,7 +689,7 @@ class DropButtonMenu: UIView,UITableViewDataSource,UITableViewDelegate {
         layer.backgroundColor = UIColor.whiteColor().CGColor
         
         let indicator = indicators[currentSelectedMenudIndex] as! CAShapeLayer
-        indicator.position = CGPointMake(title.position.x + title.frame.size.width / 2 + 8, indicator.position.y)
+        indicator.position = CGPointMake(title.position.x + title.frame.size.width / 2 - 18, indicator.position.y)
     }
     
     // MARK: - 按钮点击

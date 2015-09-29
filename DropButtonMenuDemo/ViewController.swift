@@ -22,15 +22,17 @@ class ViewController: UIViewController {
         
         let menu:DropButtonMenu = DropButtonMenu(org: CGPointMake(0, 20), height: 44)
         menu.dataArray = dataArray
-        menu.setUpView()
-        
+        menu.iconImage = UIImage(named: "MyAdvice_Block")
         menu.clickBlock = {(button) -> Void in
             
             let string = button.currentTitle
             
-            let alert:UIAlertView = UIAlertView(title: "提示", message: string, delegate: self, cancelButtonTitle: "确定")
+            let alert:UIAlertView = UIAlertView(title: "点击了", message: string, delegate: self, cancelButtonTitle: "确定")
             alert.show()
         }
+        menu.setUpView()
+        
+        
         
         self.view.addSubview(menu)
         self.view.bringSubviewToFront(menu)
