@@ -12,6 +12,7 @@
 		DD6EC7C41BBA3CB900802034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6EC7C21BBA3CB900802034 /* Main.storyboard */; };
 		DD6EC7C61BBA3CB900802034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD6EC7C51BBA3CB900802034 /* Assets.xcassets */; };
 		DD6EC7C91BBA3CB900802034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6EC7C71BBA3CB900802034 /* LaunchScreen.storyboard */; };
+		DD6EC7D21BBA3CED00802034 /* DropButtonMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6EC7D11BBA3CED00802034 /* DropButtonMenu.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DD6EC7C51BBA3CB900802034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD6EC7C81BBA3CB900802034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD6EC7CA1BBA3CB900802034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD6EC7D11BBA3CED00802034 /* DropButtonMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropButtonMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		DD6EC7BD1BBA3CB900802034 /* DropButtonMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DD6EC7D01BBA3CBE00802034 /* DropButtonMenu */,
 				DD6EC7BE1BBA3CB900802034 /* AppDelegate.swift */,
 				DD6EC7C01BBA3CB900802034 /* ViewController.swift */,
 				DD6EC7C21BBA3CB900802034 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				DD6EC7CA1BBA3CB900802034 /* Info.plist */,
 			);
 			path = DropButtonMenuDemo;
+			sourceTree = "<group>";
+		};
+		DD6EC7D01BBA3CBE00802034 /* DropButtonMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DD6EC7D11BBA3CED00802034 /* DropButtonMenu.swift */,
+			);
+			path = DropButtonMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD6EC7C11BBA3CB900802034 /* ViewController.swift in Sources */,
+				DD6EC7D21BBA3CED00802034 /* DropButtonMenu.swift in Sources */,
 				DD6EC7BF1BBA3CB900802034 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
